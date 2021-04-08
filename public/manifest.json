@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "list-of-houses",
+  "name": "list-of-houses",
   "icons": [
     {
       "src": "favicon.ico",
