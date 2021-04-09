@@ -1,0 +1,36 @@
+{
+ "extends": [
+  "eslint:recommended",
+  "plugin:react/recommended",
+  "airbnb-typescript",
+  "plugin:react-hooks/recommended",
+  "plugin:@typescript-eslint/recommended",
+  "plugin:jsx-a11y/recommended"
+ ],
+ "plugins": [
+  "react",
+  "@typescript-eslint",
+  "import",
+  "jsx-a11y"
+ ],
+ "env": {
+  "browser": true,
+  "node": true,
+  "commonjs": true,
+  "es6": true
+ },
+ "parser": "@typescript-eslint/parser",
+ "parserOptions": {
+  "ecmaFeatures": {
+   "jsx": true
+  },
+  "ecmaVersion": 2021,
+  "sourceType":  "module",
+  "project": "./tsconfig.json"
+ },
+ "settings": {
+    "react": {
+      "version": "detect" // Указывает eslint-plugin-react автоматически определять версию React для использования
+  }
+ }
+}

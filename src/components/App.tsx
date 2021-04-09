@@ -9,8 +9,9 @@ function App() {
         background: '#000',
         width: '400px',
         height: '400px',
-      }}>
-      <img src={logo} alt='logo' />
+      }}
+    >
+      <img src={logo} alt="logo" />
     </div>
   );
 }
