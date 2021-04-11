@@ -1,0 +1,7 @@
+.table__cell {
+	border: 1px solid #ddd;
+	padding: 5px;
+  font-weight: normal;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}

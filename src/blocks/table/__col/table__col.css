@@ -1,0 +1,8 @@
+.table__col {
+	font-weight: bold;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #ddd;
+}

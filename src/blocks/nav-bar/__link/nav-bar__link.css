@@ -1,0 +1,14 @@
+.nav-bar__link {
+  text-decoration: none;
+  color: #000;
+  min-width: 50px;
+  border-radius: 10px;
+  margin-right: 5px;
+  font-weight: normal;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.nav-bar__link:last-of-type {
+  margin-right: 0;
+}
