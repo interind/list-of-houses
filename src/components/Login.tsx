@@ -22,27 +22,28 @@ const Login: React.FC<ILogin> = ({ loginHandler }) => {
   return (
     <section className="login">
       <h2>Login</h2>
-      <input
-        placeholder="логин"
-        name="email"
-        defaultValue={login.email}
-        type="text"
-        onChange={changeHandler}
-      />
-      <input
-        placeholder="пароль"
-        name="password"
-        defaultValue={login.password}
-        type="password"
-        onChange={changeHandler}
-      />
-      <button
-        type="submit"
-        title="отправить"
-        onClick={submitLogin}
-      >
-        отправить
-      </button>
+      <form onSubmit={submitLogin}>
+        <input
+          placeholder="логин"
+          name="email"
+          defaultValue={login.email}
+          type="text"
+          onChange={changeHandler}
+        />
+        <input
+          placeholder="пароль"
+          name="password"
+          defaultValue={login.password}
+          type="password"
+          onChange={changeHandler}
+        />
+        <button
+          type="submit"
+          title="отправить"
+        >
+          отправить
+        </button>
+      </form>
     </section>
   );
 };

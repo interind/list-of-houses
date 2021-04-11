@@ -2,11 +2,11 @@ import React from 'react';
 import {
   Switch,
   Route,
+  Redirect,
 } from 'react-router-dom';
 import api from '../utils/api';
 import Login from './Login';
 import NavBar from './NavBar';
-import NotFound from './NotFound';
 import Table from './Table';
 
 const App: React.FC = () => {
@@ -46,7 +46,7 @@ const App: React.FC = () => {
           <Route exact path="/login">
             <Login loginHandler={loginHandler} />
           </Route>
-          <Route path="*" component={NotFound} />
+          <Redirect path="*" to="/" />
         </Switch>
       </main>
     </div>
