@@ -15,7 +15,9 @@ const Table: React.FC<ITable> = ({ data }) => {
     reestrFlatCount: '',
     createdAt: new Date(),
   }]);
+  const [count, setCount] = React.useState<number>(5);
   const tableHandled = (evt: React.ChangeEvent<HTMLSelectElement>) => {
+    setCount(5);
     if (evt.target.value) {
       const company = data.find((d) => d.name === evt.target.value);
       const index = data.indexOf(company);
@@ -31,6 +33,10 @@ const Table: React.FC<ITable> = ({ data }) => {
       }]);
     }
   };
+
+  function addData(num: number) {
+    setCount(count + num);
+  }
 
   React.useEffect(() => {
     setUserData([{ id: 0, name: '' }, ...data]);
@@ -51,7 +57,7 @@ const Table: React.FC<ITable> = ({ data }) => {
             <th className="table__cell">Номер в реестре</th>
             <th className="table__cell">Дата создания</th>
           </tr>
-          {infoTable.map((info: {
+          {infoTable.slice(0, count).map((info: {
             id: string,
             address: string,
             reestrFlatCount: number,
@@ -64,6 +70,8 @@ const Table: React.FC<ITable> = ({ data }) => {
               <th className="table__cell">{formattingDate(info.createdAt.toString())}</th>
             </tr>
           ))}
+          {((infoTable.length > 0) && (infoTable.length > count)) && (<button className="table__button-add" type="button" onClick={() => addData(8)}>Ещё</button>)}
+          {(infoTable.length === 0) && <tr><th>Нет данных</th></tr>}
         </tbody>
       </table>
     </section>

@@ -12,6 +12,7 @@
 @import url('./blocks/table-info/table-info.css');
 @import url('./blocks/table-select/table-select.css');
 @import url('./blocks/table/table.css');
+@import url('./blocks/table/__button-add/table__button-add.css');
 @import url('./blocks/table/__col/table__col.css');
 @import url('./blocks/table/__col/_theme/table__coll_theme_yellow.css');
 @import url('./blocks/table/__cell/table__cell.css');

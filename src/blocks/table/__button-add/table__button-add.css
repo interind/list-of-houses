@@ -1,0 +1,8 @@
+.table__button-add {
+  position: absolute;
+  right: 50%;
+  bottom: -30px;
+  transform: translateX(50%);
+  width: 200px;
+  border-radius: 5px;
+}
